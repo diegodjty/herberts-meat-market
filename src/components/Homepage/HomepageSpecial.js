@@ -1,11 +1,11 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styled from '@emotion/styled';
 
-import {Cow,Tbone,Chicken,Add} from '../../img'
+import {Cow,Tbone,Chicken,Add,Remove} from '../../img'
+import { Link } from 'react-router-dom';
 
-const HomepageSpecial = () => {
 
-    const Container = styled.div`
+const Container = styled.div`
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -59,6 +59,19 @@ const HomepageSpecial = () => {
                 color: #C13A3A;
 
             }
+            .list{
+                border-bottom: solid #eee 1px;
+                display: none;
+                p{
+                    font-family: 'Cabin'
+                }
+                ul{
+                    li{
+                        font-family: 'Arial';
+                        font-size: .9rem;
+                    }
+                }
+            }
         }
         button{
             margin-bottom: 1;
@@ -72,11 +85,43 @@ const HomepageSpecial = () => {
             padding: .5rem 0rem;
             background-color: white; 
             border-radius: 1rem;
+            a{
+                list-style: none;
+                color: #C13A3A
+            }
         }
         
     `;
 
-    
+const HomepageSpecial = () => {
+
+    const [isDetail,setDetail] = useState(true)
+
+    const show = (e) =>{
+        
+        const target = e.target
+        .parentElement
+        .parentElement
+        .nextElementSibling
+        .nextElementSibling
+
+        
+        target.style.display = 'block'
+        target.classList.add('animate__animated', 'animate__fadeIn')
+        setDetail(false)
+    }
+
+    const hide = (e) =>{
+        const target = e.target
+        .parentElement
+        .parentElement
+        .nextElementSibling
+        .nextElementSibling
+        
+        target.style.display = 'none'
+        setDetail(true)
+    }
+
     return (
         <Container>
             <div className="text">
@@ -86,36 +131,134 @@ const HomepageSpecial = () => {
                 </p>
             </div>
             <div className="specials-container">
-                <div className="special">
-                    <img src={Cow} alt=""/>
-                    <div className="name">
-                        <p>Good Old Day #1</p> <span><img src={Add} alt=""/></span>
+            <div className="special">
+                        <img src={Cow} alt=""/>
+                        <div className="name">
+                            <p>Good Old Day #1</p> 
+                            <span>
+                                {isDetail
+                                ?
+                                    <img  src={Add} onClick={show} alt=""/>
+                                    
+                                :
+                                    <img src={Remove} onClick={hide} alt=""/>
+                                }
+                                
+                            </span>
+                        </div>
+                        <div className="price">
+                            $49.98
+                        </div>
+                        <div className="list">
+                            <p>Includes FREE 1lb.
+                               Package of Margarine
+                            </p>
+                            <ul>
+                                <li>
+                                    2lbs.Prime Cut
+                                    Chuck Steak
+                                </li>
+                                <li>
+                                    2lbs.Prime Ground
+                                    Chuck 
+                                </li>
+                                <li>
+                                    2lbs.Grain-Fed Pork
+                                    Chops
+                                </li>
+                                <li>
+                                    1lb.Country Slab
+                                    Bacon
+                                </li>
+                                <li>
+                                    3 lbs.Grade A Perdue
+                                    Chicken
+                                </li>
+                                <li>
+                                    2lbs.Grade A Perdue
+                                    Chicken Wings
+                                </li>
+                                <li>
+                                    3lbs.Grade A Perdue
+                                    Quartered Legs
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className="price">
-                        $49.98
+                    <div className="special">
+                        <img src={Tbone} alt=""/>
+                        <div className="name">
+                            <p>Cookin' Good #2</p>
+                            <span>
+                                {isDetail
+                                ?
+                                    <img  src={Add} onClick={show} alt=""/>
+                                    
+                                :
+                                    <img src={Remove} onClick={hide} alt=""/>
+                                }
+                                
+                            </span>
+                        </div>
+                        <div className="price">
+                            $81.98
+                        </div>
+                        <div className="list">
+                                <p>Includes FREE 1 Dozen
+                                    Extra Large Eggs</p>
+                                <ul>
+                                    <li>2 lbs. Prime Cut Chuck Steak</li>
+                                    <li>2 lbs. Prime Ground Chuck</li>
+                                    <li>2 lbs Prime Boneless Steaks</li>
+                                    <li>3 lbs. Grain-Fed Pork Spare Ribs</li>
+                                    <li>2 lbs. Grain-Fed Pork Chops</li>
+                                    <li>1 lb. Country Slab Bacon</li>
+                                    <li>3 lbs. Grade A Perdue Chicken</li>
+                                    <li>2 lbs. Grade A Perdue Chicken Wings</li>
+                                    <li>3 lbs. Grade A Perdue Quartered Legs</li>
+                                    <li>1 lb. Franks (Chicken, Turkey, or Beef)</li>
+                                    <li>1 lb. Package of Margarine</li>
+                                </ul>
+                                
+                        </div>
+                        
                     </div>
-                </div>
-                <div className="special">
-                    <img src={Tbone} alt=""/>
-                    <div className="name">
-                        <p>Cookin' Good #2</p> <span><img src={Add} alt=""/></span>
+                    <div className="special">
+                        <img src={Chicken} alt=""/>
+                        <div className="name">
+                            <p>Chicken Lickin #3</p>
+                            <span>
+                                {isDetail
+                                ?
+                                    <img  src={Add} onClick={show} alt=""/>
+                                    
+                                :
+                                    <img src={Remove} onClick={hide} alt=""/>
+                                }
+                                
+                            </span>
+                        </div>
+                        <div className="price">
+                            $59.98
+                        </div>
+                        <div className="list">
+                                <p>Includes FREE Jar of "Spice Time"
+                                     Spice</p>
+                                <ul>
+                                    <li>2 lbs. Grade A Perdue Chicken Cutlets</li>
+                                    <li>2 lbs. Grade A Perdue Chicken Breasts</li>
+                                    <li>3 lbs. Grade A Perdue Chicken Wings</li>
+                                    <li>2 lbs. Premium Turkey Burgers</li>
+                                    <li>1 Pkg. Premium Ground Turkey</li>
+                                    <li>3 lbs. Grade A Perdue Chicken</li>
+                                    <li>10 lbs. Grade A Perdue Quartered Legs</li>
+                                </ul>
+                                
+                        </div>
                     </div>
-                    <div className="price">
-                        $81.98
-                    </div>
-                </div>
-                <div className="special">
-                    <img src={Chicken} alt=""/>
-                    <div className="name">
-                        <p>Chicken Lickin #3</p> <span><img src={Add} alt=""/></span>
-                    </div>
-                    <div className="price">
-                        $59.98
-                    </div>
-                </div>
             </div>
             <button>
-                VIEW MORE SPECIALS
+                <Link to="/specials">VIEW MORE SPECIALS</Link>
             </button>
         </Container>
     );

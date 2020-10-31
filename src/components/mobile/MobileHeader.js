@@ -14,6 +14,7 @@ const MobileHeader = () => {
         justify-content: space-between;
         align-items: center;
         position: fixed;
+        z-index: 100;
         top: 0;
         width: 100%;
 
