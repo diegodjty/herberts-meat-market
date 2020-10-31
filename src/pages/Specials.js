@@ -146,7 +146,7 @@ const Specials = () => {
     return (
         <Container>
             <div className="specialBG"
-                style={{backgroundImage : `url(${SpecialBG})`}}
+                
             >
                 <h3>Specials</h3>
             </div>
