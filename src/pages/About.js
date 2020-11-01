@@ -125,7 +125,7 @@ const About = () => {
                     <p>USDA PRIME is the Best Grade you can buy with very well-distributed marbling – which is what gives beef its flavor, tenderness and consistency.</p>
                     <p>When you shop at Herbert's you get the highest quality, best tasting, and freshest meat possible for your dollar. Period.</p>
                     <button>
-                        <Link to="/meatgrades">SEE OUR SPECIALS</Link>
+                        <Link to="/specials">SEE OUR SPECIALS</Link>
                     </button >  
 
                 </div>

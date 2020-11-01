@@ -77,7 +77,7 @@ const Comments = () => {
     return (
         <Container style={{backgroundImage: `url(${CommentBG})`,backgroundPosition: 'center'}}>
             <img src={Quote} alt=""/>
-            <div className="testimonial">
+            <div className="testimonial animate__animated animate__fadeIn ">
                 <div className="quote">
                     {testimonials[seconds].testimonial}
                 </div>

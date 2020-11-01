@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import {Logo,FacebookIcon,MailIcon} from '../img'
+import { Link } from 'react-router-dom';
 
 const Container = styled.footer`
 
@@ -62,7 +63,7 @@ const Footer = () => {
     return (
         <Container>
             <div className="logo">
-                <img src={Logo} alt=""/>
+                <Link to ="/home"><img src={Logo} alt=""/></Link>
             </div>
             <div className="get-in-touch">
                 <h3>GET IN TOUCH</h3>
