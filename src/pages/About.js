@@ -114,9 +114,7 @@ const About = () => {
                     <h3>About Herbert's Meat Market</h3>
                     <p>Herbert's Country Meat Market was established in 1936 and has been serving the Hempstead community with the freshest beef, pork, poultry, lamb, goat, oxtails
                     and so much more.</p>
-                    <div className="line">
-
-                    </div>
+                    <div className="line"></div>
                 </div>
                 <div className="content">
                     <h4>Herbert's Uses Black Angus Prime Beef</h4>

@@ -63,7 +63,7 @@ const Footer = () => {
     return (
         <Container>
             <div className="logo">
-                <Link to ="/home"><img src={Logo} alt=""/></Link>
+                <Link to ="/"><img src={Logo} alt=""/></Link>
             </div>
             <div className="get-in-touch">
                 <h3>GET IN TOUCH</h3>

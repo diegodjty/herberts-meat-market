@@ -100,7 +100,7 @@ const MobileHeader = () => {
                             <img className={menu?'close animate__animated animate__fadeInDown': 'animate__animated animate__fadeOutUp'}  src={Close} onClick={handleMenu} alt=""/>
                             <nav className={menu?'animate__animated animate__fadeInDown': 'animate__animated animate__fadeOutUp'} >
                                 <ul>
-                                    <li><NavLink activeStyle={{ color: '#C13A3A' }} onClick={closeMenu}  to="/home"> HOME</NavLink></li>
+                                    <li><NavLink activeStyle={{ color: '#C13A3A' }} onClick={closeMenu}  to="/"> HOME</NavLink></li>
                                     <li><NavLink activeStyle={{ color: '#C13A3A' }} onClick={closeMenu}  to="/specials"> SPECIALS</NavLink></li>
                                     <li><NavLink activeStyle={{ color: '#C13A3A' }} onClick={closeMenu}  to="/about"> ABOUT</NavLink></li>
                                     <li><NavLink activeStyle={{ color: '#C13A3A' }} onClick={closeMenu}  to="/meatgrades"> MEAT GRADES</NavLink></li>
@@ -114,7 +114,7 @@ const MobileHeader = () => {
                         }
                 </div>
                 <div className="logo">
-                    <Link to="/home">
+                    <Link to="/">
                         <img src={Logo} alt=""/>
                     </Link>
                 </div>

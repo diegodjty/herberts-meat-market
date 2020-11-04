@@ -24,7 +24,7 @@ function App() {
     <Router>
       <MobileHeader />
       <Switch>
-          <Route exact path="/home" component={Homepage}/>
+          <Route exact path="/" component={Homepage}/>
           <Route exact path="/specials" component={Specials}/>
           <Route exact path="/about" component={About}/>
           <Route exact path="/meatgrades" component={MeatGrades}/>
