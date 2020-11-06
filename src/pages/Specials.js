@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import styled from '@emotion/styled'
-
+import mq from './../scripts/breakpoints';
 import {SpecialBG,
         Cow,
         Tbone,
@@ -18,7 +18,6 @@ import {SpecialBG,
         Add,
         Remove} from '../img'
 
-
 const Container = styled.div`
    display: flex;
    flex-direction: column;
@@ -34,10 +33,16 @@ const Container = styled.div`
        width: 100%;
        background-image: url(${SpecialBG});
        background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       ${mq[0]}{
+            padding: 5rem 0;
+       }
        h3{
            color: white;
            font-size: 2.5rem;
        }
+
    }
    .main{
        .text{

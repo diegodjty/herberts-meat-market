@@ -6,7 +6,7 @@ import {AboutBG,
         Aboutgallery3,
         Aboutgallery4} from '../img/index'
 import { Link } from 'react-router-dom';
-
+import mq from './../scripts/breakpoints';
 
 
 const Container = styled.div`
@@ -25,6 +25,10 @@ const Container = styled.div`
        background-image: url(${AboutBG});
        background-position: center;
        background-size: cover;
+       background-repeat: no-repeat;
+       ${mq[0]}{
+            padding: 5rem 0;
+       }
    }   
        h3{
            color: white;
@@ -41,15 +45,15 @@ const Container = styled.div`
             width: 90%;
             h3{
                 color: #C13A3A;
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
             p{
                 font-family: 'Arial';
-                font-size: .8rem;
+                font-size: 1rem;
                 
             }
             .line{
-                width: 50%;
+                width: 60%;
                 margin: auto;
                 height: 2px;
                 background-color: #C13A3A;
@@ -60,11 +64,11 @@ const Container = styled.div`
             width: 95%;
             h4{
                 color: black;
-                font-size: 1.2rem; 
+                font-size: 1.4rem; 
             }
             p{
                 font-family: 'Arial';
-                font-size: .8rem;
+                font-size: 1rem;
                 text-align: left;
                 &:nth-child(3){
                     font-size: 1.2rem;
@@ -73,7 +77,7 @@ const Container = styled.div`
                 }
             }
             button{
-                width: 90%;
+                width: 40%;
                 margin-top: 1rem;
                 margin-bottom: 2rem;
                 font-size: .7rem;
