@@ -13,7 +13,7 @@ import {MeatGradesBG,
         MeatPork, 
         MeatTurkey 
         } from '../img/index'
-import { Link } from 'react-router-dom';
+
 
 const Container = styled.div`
    display: flex;

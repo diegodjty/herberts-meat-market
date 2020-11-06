@@ -1,9 +1,9 @@
-import React,{Fragment} from 'react'
+import React from 'react'
 
 import MobileHeader from './components/mobile/MobileHeader'
 import Comments from './components/Comments'
 import Footer from './components/Footer'
-import Header from './components/Header';
+
 
 import Homepage from './pages/Homepage';
 import Specials from './pages/Specials';

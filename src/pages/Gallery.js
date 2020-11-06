@@ -6,7 +6,6 @@ import {
     Gallery2,
     Gallery3,
     Gallery4,
-    Gallery5,
     Gallery6,
     Gallery7,
     Gallery8,
