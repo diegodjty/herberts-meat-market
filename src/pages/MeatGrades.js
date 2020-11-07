@@ -13,7 +13,7 @@ import {MeatGradesBG,
         MeatPork, 
         MeatTurkey 
         } from '../img/index'
-
+import mq from './../scripts/breakpoints';
 
 const Container = styled.div`
    display: flex;
@@ -25,6 +25,9 @@ const Container = styled.div`
    h3{
         color: white;
         font-size: 2rem;
+        ${mq[0]}{
+            font-size: 2.5rem;
+        }
     }
    .meatGradesBG{
        display: flex;
@@ -35,6 +38,9 @@ const Container = styled.div`
        background-image: url(${MeatGradesBG});
        background-position: center;
        background-size: cover;
+       ${mq[0]}{
+            padding: 5rem 0;
+       }
    } 
    .main{
         margin: auto;
@@ -48,10 +54,16 @@ const Container = styled.div`
             h3{
                 color: #C13A3A;
                 font-size: 1.8rem;
+                ${mq[0]}{
+                    font-size: 2rem;
+                }
             }
             p{
                 font-family: 'Arial';
                 font-size: .8rem;
+                ${mq[0]}{
+                    font-size: 1rem;
+                }
             }
         }
         .content{
@@ -59,6 +71,9 @@ const Container = styled.div`
             h4{
                 color: black;
                 font-size: 1.2rem; 
+                ${mq[0]}{
+                    font-size: 1.5rem;
+                }
             }
             p{
                 font-family: 'Arial';
@@ -68,6 +83,9 @@ const Container = styled.div`
                     font-size: 1.2rem;
                     font-family: 'Cabin';
                     color: #C13A3A;
+                }
+                ${mq[0]}{
+                    font-size: 1rem;
                 }
             }
             .first-section{
@@ -94,7 +112,7 @@ const Container = styled.div`
                 background-color: #C13A3A;
                 color: white;
                 font-size: 2rem;
-                padding: .6rem;
+                padding: 1rem 0;
             }
             .second-section{
                 display: flex;

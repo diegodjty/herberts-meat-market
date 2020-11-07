@@ -45,11 +45,17 @@ const Container = styled.div`
             width: 90%;
             h3{
                 color: #C13A3A;
-                font-size: 2rem;
+                font-size: 1.8rem;
+                ${mq[0]}{
+                    font-size: 2rem;
+                }
             }
             p{
                 font-family: 'Arial';
-                font-size: 1rem;
+                font-size: .8rem;
+                ${mq[0]}{
+                    font-size: 1rem;
+                }
                 
             }
             .line{
@@ -64,12 +70,18 @@ const Container = styled.div`
             width: 95%;
             h4{
                 color: black;
-                font-size: 1.4rem; 
+                font-size: 1.2rem;
+                ${mq[0]}{
+                    font-size: 1.5rem;
+                }
             }
             p{
                 font-family: 'Arial';
-                font-size: 1rem;
+                font-size: .8rem;
                 text-align: left;
+                ${mq[0]}{
+                    font-size: 1rem;
+                }
                 &:nth-child(3){
                     font-size: 1.2rem;
                     font-family: 'Cabin';
@@ -77,7 +89,7 @@ const Container = styled.div`
                 }
             }
             button{
-                width: 40%;
+                width: 90%;
                 margin-top: 1rem;
                 margin-bottom: 2rem;
                 font-size: .7rem;
@@ -87,6 +99,10 @@ const Container = styled.div`
                 padding: .5rem 0rem;
                 background-color: white; 
                 border-radius: 1rem;
+                ${mq[0]}{
+                    width: 50%;
+                    font-size: 1rem;
+                }
                 a{
                     text-decoration: none;
                     color: #C13A3A;
