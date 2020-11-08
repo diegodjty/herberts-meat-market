@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import styled from '@emotion/styled'
 import mq from './../scripts/breakpoints';
+import Banner  from './../components/Banner'
 import {SpecialBG,
         Cow,
         Tbone,
@@ -25,24 +26,8 @@ const Container = styled.div`
    align-items: center;
    margin-top: 100px;
    font-family: 'Cabin', sans-serif;
-   .specialBG{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 200px;
-       width: 100%;
-       background-image: url(${SpecialBG});
-       background-position: center;
-       background-size: cover;
-       background-repeat: no-repeat;
-       ${mq[0]}{
-            padding: 5rem 0;
-       }
-       h3{
-           color: white;
-           font-size: 2.5rem;
-       }
-
+   ${mq[1]}{
+       margin-top: 0;
    }
    .main{
        .text{
@@ -150,11 +135,7 @@ const Specials = () => {
 
     return (
         <Container>
-            <div className="specialBG"
-                
-            >
-                <h3>Specials</h3>
-            </div>
+            <Banner img={SpecialBG} title="SPECIALS" />
             <div className="main">
                 <div className="text">
                     <h3>Our Specials</h3>

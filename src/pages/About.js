@@ -7,7 +7,7 @@ import {AboutBG,
         Aboutgallery4} from '../img/index'
 import { Link } from 'react-router-dom';
 import mq from './../scripts/breakpoints';
-
+import Banner  from './../components/Banner'
 
 const Container = styled.div`
    display: flex;
@@ -16,24 +16,9 @@ const Container = styled.div`
    align-items: center;
    margin-top: 100px;
    font-family: 'Cabin', sans-serif;
-   .aboutBG{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 200px;
-       width: 100%;
-       background-image: url(${AboutBG});
-       background-position: center;
-       background-size: cover;
-       background-repeat: no-repeat;
-       ${mq[0]}{
-            padding: 5rem 0;
-       }
-   }   
-       h3{
-           color: white;
-           font-size: 2.5rem;
-       }
+   ${mq[1]}{
+       margin-top: 0;
+   }
     .main{
         margin: auto;
         display: flex;
@@ -124,11 +109,7 @@ const Container = styled.div`
 const About = () => {
     return (
         <Container>
-            <div className="aboutBG"
-                
-            >
-                <h3>ABOUT</h3>
-            </div>
+            <Banner img={AboutBG} title="ABOUT" />
             <div className="main">
                 <div className="title">
                     <h3>About Herbert's Meat Market</h3>

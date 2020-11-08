@@ -4,11 +4,11 @@ import {NavLink,Link} from 'react-router-dom'
 
 
 import styled from '@emotion/styled'
+import mq from './../../scripts/breakpoints';
 
 const MobileHeader = () => {
 
     const Header = styled.header`
-
         background-color: #C13A3A;
         display: flex;
         justify-content: space-between;
@@ -17,7 +17,9 @@ const MobileHeader = () => {
         z-index: 100;
         top: 0;
         width: 100%;
-
+        ${mq[1]}{
+            display: none;
+        }
         .menu{
             img{
                 width: 20px;

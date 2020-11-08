@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import styled from '@emotion/styled';
 import {Quote,CommentBG} from '../img'
+import mq from './../scripts/breakpoints';
 
 
 const Container = styled.div`
@@ -10,7 +11,9 @@ const Container = styled.div`
     align-items: center;
     color: white;
     flex-direction: column;
-
+    ${mq[1]}{
+        padding: 10rem;
+    }
     img{
         margin: 3rem 0;
         width: 40px;
@@ -22,6 +25,10 @@ const Container = styled.div`
         height: 100px;
         margin-bottom: 5rem;
         text-align: center;
+        ${mq[1]}{
+            width: 50%;
+            font-size: 1.2rem;
+        }
     }
 
     .name{

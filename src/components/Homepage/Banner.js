@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import mq from '../../scripts/breakpoints'
 
 const BannerContainer = styled.div`
-        
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -14,8 +14,12 @@ const BannerContainer = styled.div`
     justify-content: center;
     margin-top: 100px;
     ${mq[0]}{
-            padding: 5rem 0;
-        }
+        padding: 5rem 0;
+    }
+    ${mq[1]}{
+        margin-top: 0px;
+        padding: 20rem 0;
+    }
     h2{
         color: white ;
         font-weight: bold;
@@ -26,7 +30,10 @@ const BannerContainer = styled.div`
         font-family: 'Cabin', sans-serif;
         ${mq[0]}{
             font-size: 2rem;
+        }${mq[1]}{
+            font-size: 5rem;
         }
+        
     }
 
     p{
@@ -40,6 +47,9 @@ const BannerContainer = styled.div`
         font-family: 'Open Sans', sans-serif;
         ${mq[0]}{
             font-size: 1.2rem;
+        }${mq[1]}{
+            font-size: 1.8rem;
+            width: 60%;
         }
         
     }
@@ -58,6 +68,12 @@ const BannerContainer = styled.div`
             font-size: .9rem;
             margin-top: 2rem;
             width: 30%;
+        }${mq[1]}{
+            font-size: .9rem;
+            margin-top: 2rem;
+            width: 15%;
+            padding: 1rem;
+            border-radius: 30px;
         }
         a{
             text-decoration: none;

@@ -14,6 +14,7 @@ import {MeatGradesBG,
         MeatTurkey 
         } from '../img/index'
 import mq from './../scripts/breakpoints';
+import Banner  from './../components/Banner'
 
 const Container = styled.div`
    display: flex;
@@ -22,26 +23,9 @@ const Container = styled.div`
    align-items: center;
    margin-top: 100px;
    font-family: 'Cabin', sans-serif;
-   h3{
-        color: white;
-        font-size: 2rem;
-        ${mq[0]}{
-            font-size: 2.5rem;
-        }
-    }
-   .meatGradesBG{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 200px;
-       width: 100%;
-       background-image: url(${MeatGradesBG});
-       background-position: center;
-       background-size: cover;
-       ${mq[0]}{
-            padding: 5rem 0;
-       }
-   } 
+   ${mq[1]}{
+       margin-top: 0;
+   }
    .main{
         margin: auto;
         display: flex;
@@ -145,9 +129,7 @@ const Container = styled.div`
 const MeatGrades = () => {
     return (
         <Container>
-            <div className="meatGradesBG">
-                <h3>MEAT GRADES & CUTS</h3>
-            </div>
+            <Banner img={MeatGradesBG} title="MEAT GRADES & CUTS" />
             <div className="main">
                 <div className="title">
                     <h3>MAKING THE GRADE</h3>

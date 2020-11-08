@@ -4,12 +4,17 @@ import styled from '@emotion/styled';
 import {Cow,Tbone,Chicken,Add,Remove} from '../../img'
 import { Link } from 'react-router-dom';
 
+import mq from './../../scripts/breakpoints';
+
 
 const Container = styled.div`
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            ${mq[1]}{
+                padding: 10rem;
+            }
         .text{
             text-align: center;
             width: 80%;
@@ -18,10 +23,22 @@ const Container = styled.div`
                 
                 font-size: 1.5rem;
                 color:#C13A3A;
+                ${mq[1]}{
+                    font-size: 2.5rem;
+                }
+            }
+            p{
+                ${mq[1]}{
+                    font-size: 1.2rem;
+                }
             }
         }
         .specials-container{
             width: 100%;
+            ${mq[1]}{
+                width: 50%;
+                display: flex;
+            }
         }
         .special{
             display: flex;
@@ -31,6 +48,9 @@ const Container = styled.div`
             width: 50%;
             margin: auto;
             margin-bottom: 2.5rem;
+            ${mq[1]}{
+                margin-right: 1rem;
+            }
             img{
                 width: 60px;
             }
@@ -85,9 +105,14 @@ const Container = styled.div`
             padding: .5rem 0rem;
             background-color: white; 
             border-radius: 1rem;
+            ${mq[1]}{
+                width: 15%;
+                padding: .7rem ; 
+            }
             a{
                 list-style: none;
-                color: #C13A3A
+                color: #C13A3A;
+                text-decoration: none;
             }
         }
         

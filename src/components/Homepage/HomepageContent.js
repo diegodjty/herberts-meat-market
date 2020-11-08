@@ -13,13 +13,40 @@ const HomepageContent = () => {
             text-align: center;
             margin: auto;
             font-family: 'Open Sans', sans-serif;
+            background-color: #F6F6F6;
+            ${mq[1]}{
+                display: flex;
+                margin: 0;
+                justify-content: center;
+                align-items: center;
+                margin-top: -5px;
+            }
             .text{
                 ${mq[0]}{
                     padding: 3rem;
+                }${mq[1]}{
+                    margin: 0;
+                    width: 40%;
+                    text-align: left;
+                    order: 1;
                 }
                 h3 , p {
                     width: 80%;
                     margin: 1rem auto;
+                    ${mq[1]}{
+                        margin: 0;
+                    }
+                }
+                h3{
+                    ${mq[1]}{
+                        font-size: 2rem;
+                    }
+                }
+                p{
+                    ${mq[1]}{
+                        font-size: 1rem;
+                        margin-top: .5rem;
+                    }
                 }
                 button{
                 width: 50%;
@@ -36,6 +63,11 @@ const HomepageContent = () => {
                     margin-top: 2rem;
                     width: 35%;
                 }
+                ${mq[1]}{
+                    margin-top: 2rem;
+                    width: 30%;
+                    padding: .8rem 0rem;
+                }
                     a{
                         text-decoration: none;
                         color: #C13A3A;
@@ -43,9 +75,18 @@ const HomepageContent = () => {
                 }
 
             }
+            .second-text{
+                ${mq[1]}{
+                    order: 0;
+                }
+            }
 
             .img{
                 width: 100%;
+                ${mq[1]}{
+                    width: 60%;
+                    order: 0;
+                }
                 img{
                     width: 100%;
                 }
@@ -78,7 +119,7 @@ const HomepageContent = () => {
             </div>
             
             <div className="content">
-                <div className="text">
+                <div className="text second-text">
                     <h3 className="text-title">Only the Best</h3>
                     <p>USDA PRIME is the Best Grade you can buy with very
                         well-distributed marbling – which is what gives beef

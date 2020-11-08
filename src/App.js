@@ -11,8 +11,10 @@ import About from './pages/About';
 import MeatGrades from './pages/MeatGrades';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import Header from './components/Header';
 
 import {
+
   BrowserRouter as Router,
   Switch,
   Route
@@ -22,6 +24,7 @@ import {
 function App() {
   return (
     <Router>
+      <Header />
       <MobileHeader />
       <Switch>
           <Route exact path="/" component={Homepage}/>

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled'
-
+import Banner  from './../components/Banner'
+import mq from './../scripts/breakpoints';
 import {ContactBG,
         ContactPhone,
         ContactMail,
@@ -17,18 +18,8 @@ const Container = styled.div`
    align-items: center;
    margin-top: 100px;
    font-family: 'Cabin', sans-serif;
-   .contactBG{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 200px;
-       width: 100%;
-       background-image: url(${ContactBG});
-       background-position: center;
-       h3{
-           color: white;
-           font-size: 2.5rem;
-       }
+   ${mq[1]}{
+       margin-top: 0;
    }
    .main{
        .text{
@@ -151,9 +142,7 @@ const Contact = () => {
     }
     return (
         <Container>
-            <div className="contactBG">
-                <h3>CONTACT</h3>
-            </div>
+            <Banner img={ContactBG} title="CONTACT" />
             <div className="main">
                 <div className="text">
                     <h3>Contact Us</h3>
