@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import mq from '../../scripts/breakpoints'
 
 const BannerContainer = styled.div`
-    background-attachment: fixed;
+    
     background-position: center;
     background-size: cover;
     display: flex;
@@ -19,6 +19,7 @@ const BannerContainer = styled.div`
     ${mq[1]}{
         margin-top: 0px;
         padding: 20rem 0;
+        background-attachment: fixed;
     }
     h2{
         color: white ;
