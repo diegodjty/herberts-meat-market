@@ -50,9 +50,21 @@ const Container = styled.div`
                 background-color: #C13A3A;
                 margin-top: 3rem;
             }
+            ${mq[1]}{
+                width: 50%;
+                h3{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
         }
         .content{
             width: 95%;
+            ${mq[1]}{
+                    width: 50%;
+            } 
             h4{
                 color: black;
                 font-size: 1.2rem;
@@ -92,6 +104,7 @@ const Container = styled.div`
                     text-decoration: none;
                     color: #C13A3A;
                 }
+                
         }
             
         }
