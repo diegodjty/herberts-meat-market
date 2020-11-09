@@ -21,6 +21,7 @@ const Container = styled.div`
    ${mq[1]}{
        margin-top: 0;
    }
+   
    .main{
        .text{
            text-align: center;
@@ -33,6 +34,15 @@ const Container = styled.div`
            }
            p{
                font-family: Arial, Helvetica, sans-serif
+           }
+           ${mq[1]}{
+               width: 50%;
+               h3{
+                   font-size: 2rem;
+               }
+               p{
+                   font-size: 1.2rem;
+               }
            }
        }
        .line{
@@ -77,9 +87,29 @@ const Container = styled.div`
                     font-size: 1.2rem;
                 }
             }
+            ${mq[1]}{
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                padding: 3rem 0;
+                .card{
+                    width: 20%;
+                    padding: 3rem;
+                    justify-content: space-between;
+                    img{
+                        width: 65px;
+                    }
+                    h5{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            
+        }
+        .contact-form-container{
+            background-color: #C13A3A;
         }
         .contact-form{
-            background-color: #C13A3A;
             .content{
                 color: white;
                 width: 90%;
@@ -131,6 +161,27 @@ const Container = styled.div`
                     }
                 }
             }
+            ${mq[1]}{
+                width: 60%;
+                margin: auto;
+                display: flex;
+                padding: 5rem 0;
+                .content{
+                    width: 40%;
+                    .text{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+                }
+                .form{
+                    width: 40%;
+                }
+            }
+        }
+        ${mq[1]}{
+            width: 100%;
         }
    }
 `
@@ -179,39 +230,41 @@ const Contact = () => {
                         </a>
                     </div>
                 </div>
-                <div className="contact-form">
-                    <div className="content">
-                       <div className="text">
-                            <p>We’d love to hear from you.
-                            Just choose the most convenient method and we’ll get back to you as soon as we can.</p>
+                <div className="contact-form-container">
+                    <div className="contact-form">
+                        <div className="content">
+                            <div className="text">
+                                <p>We’d love to hear from you.
+                                Just choose the most convenient method and we’ll get back to you as soon as we can.</p>
 
-                        </div> 
-                        <div className="business-hours">
-                            <h3>BUSINESS HOURS</h3>
-                            <div className="mon-sat">
-                                <span>Mon-Sat</span> <span>8:00 am - 6:30 pm</span>
+                            </div> 
+                            <div className="business-hours">
+                                <h3>BUSINESS HOURS</h3>
+                                <div className="mon-sat">
+                                    <span>Mon-Sat</span> <span>8:00 am - 6:30 pm</span>
+                                </div>
+                                <div className="sunday">
+                                <span>Sunday</span> <span>8:00 am - 4:00 pm</span>
+                                </div>
                             </div>
-                            <div className="sunday">
-                            <span>Sunday</span> <span>8:00 am - 4:00 pm</span>
+                            <div className="social-media">
+                                <a href="https://www.facebook.com/Herberts-Country-Meat-Market-444297099020073/">
+                                    <img src={FacebookIcon} alt=""/>
+                                </a>
+                                <a href="mailto:herbertsfinemeats@gmail.com">
+                                    <img src={MailIcon} alt=""/>
+                                </a>
                             </div>
                         </div>
-                        <div className="social-media">
-                            <a href="https://www.facebook.com/Herberts-Country-Meat-Market-444297099020073/">
-                                <img src={FacebookIcon} alt=""/>
-                            </a>
-                            <a href="mailto:herbertsfinemeats@gmail.com">
-                                <img src={MailIcon} alt=""/>
-                            </a>
+                        <div className="form">
+                            <form action="">
+                                <input type="text" placeholder="Name"/>
+                                <input type="text" placeholder="Email"/>
+                                <input type="text" placeholder="Phone"/>
+                                <textarea placeholder="Message"></textarea>
+                                <input className="submit" onClick={handleSubmit} type="submit" value="Submit"/>
+                            </form>
                         </div>
-                    </div>
-                    <div className="form">
-                        <form action="">
-                            <input type="text" placeholder="Name"/>
-                            <input type="text" placeholder="Email"/>
-                            <input type="text" placeholder="Phone"/>
-                            <textarea placeholder="Message"></textarea>
-                            <input className="submit" onClick={handleSubmit} type="submit" value="Submit"/>
-                        </form>
                     </div>
                 </div>
             </div>
