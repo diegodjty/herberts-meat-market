@@ -49,6 +49,15 @@ const Container = styled.div`
                     font-size: 1rem;
                 }
             }
+            ${mq[1]}{
+                width: 40%;
+                h3{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
         }
         .content{
             
@@ -91,12 +100,45 @@ const Container = styled.div`
                         }
                     }
                 }
+                ${mq[1]}{
+                    width: 80%;
+                    margin: 5rem auto;
+                    background-color: transparent;
+                    .card{
+                        display: flex;
+                        :last-of-type{
+                            img{
+                                order: 1;
+                            }
+                            .text{
+                                order: 0;
+                            }
+
+                        }
+                        img{
+                            width: 40%;
+                        }
+                        .text{
+                            width: 40%;
+                            h5{
+                                font-size: 1.8rem;
+                            }
+                            p{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
             }
             .line{
                 background-color: #C13A3A;
                 color: white;
                 font-size: 2rem;
                 padding: 1rem 0;
+                ${mq[1]}{
+                    padding: 5rem 0;
+                    font-size: 6rem;
+                }
             }
             .second-section{
                 display: flex;
@@ -114,6 +156,21 @@ const Container = styled.div`
                         }
                     }
                 }
+                ${mq[1]}{
+                    flex-direction: row;
+                    width: 80%;
+                    margin: 5rem auto;
+                    .card{
+                        img{
+                            width: 90%;
+                        }
+                        .text{
+                            p{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    } 
+                }
             }
         }
         .meatGrades-gallery{
@@ -122,6 +179,7 @@ const Container = styled.div`
                 height: 100%;
                 margin-bottom: -1rem;
             }
+            
         }
     }
 `
