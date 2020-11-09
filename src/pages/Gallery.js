@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled'
 import ResponsiveGallery from 'react-responsive-gallery';
 import {
+
     Gallery1,
     Gallery2,
     Gallery3,
@@ -15,7 +16,7 @@ import {
     Gallery12,
     
 } from '../img/'
-
+import mq from './../scripts/breakpoints';
 const Container = styled.div`
    display: flex;
    flex-direction: column;
@@ -33,8 +34,18 @@ const Container = styled.div`
        p{
         font-family: Arial, Helvetica, sans-serif
        }
+       ${mq[1]}{
+           width: 50%;
+           h3{
+               font-size: 2rem;
+           }
+           p{
+               font-size: 1.2rem;
+           }
+       }
    }
 `
+
 const Gallery = () => {
 
     const images =[
@@ -82,7 +93,8 @@ const Gallery = () => {
                 <h3>OUR GALLERY</h3>
                 <p>Herbert's Country Meat Market was established in 1936 and has been serving the Hempstead community with the freshest beef, pork, poultry, lamb, goat, oxtails and so much more. We take pride in our cuts of meat. Take a look at what we have to offer. Like what you see? Contact us about our specials! </p>
             </div>
-            <ResponsiveGallery 
+            <ResponsiveGallery
+                className="gallery" 
                 images ={images}
                 useLightBox={true}
                 numOfImagesPerRow={{xs: 1,s: 2,m: 3,l: 3,xl: 4 ,xxl:4}}
