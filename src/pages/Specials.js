@@ -30,11 +30,15 @@ const Container = styled.div`
        margin-top: 0;
    }
    .main{
+       ${mq[1]}{
+            width: 100%;
+       }
        .text{
            text-align: center;
            width: 90%;
            margin: auto;
            margin-bottom: 3rem;
+           
            h3{
                font-size: 1.5rem;
                color: #C13A3A;
@@ -42,9 +46,24 @@ const Container = styled.div`
            p{
                font-family: Arial, Helvetica, sans-serif
            }
+           ${mq[1]}{
+                width: 40%;
+                h3{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+           }
        }
        .specials-container{
             width: 100%;
+            ${mq[1]}{
+                width: 50%;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+            }
         }
         .special{
             display: flex;
@@ -54,6 +73,9 @@ const Container = styled.div`
             width: 50%;
             margin: auto;
             margin-bottom: 2.5rem;
+            ${mq[1]}{
+                width: 32%;
+            }
             img{
                 width: 60px;
             }
