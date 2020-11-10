@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled'
+import about from '../data/about.json'
 import {AboutBG,
         Aboutgallery1,
         Aboutgallery2,
@@ -8,6 +9,7 @@ import {AboutBG,
 import { Link } from 'react-router-dom';
 import mq from './../scripts/breakpoints';
 import Banner  from './../components/Banner'
+import MetaData from '../components/MetaData'
 
 const Container = styled.div`
    display: flex;
@@ -122,6 +124,7 @@ const Container = styled.div`
 const About = () => {
     return (
         <Container>
+            <MetaData title={`Herberts - ${about.title}`} description={about.description} />
             <Banner img={AboutBG} title="ABOUT" />
             <div className="main">
                 <div className="title">

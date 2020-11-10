@@ -2,6 +2,9 @@ import React,{useState} from 'react';
 import styled from '@emotion/styled'
 import mq from './../scripts/breakpoints';
 import Banner  from './../components/Banner'
+import MetaData from '../components/MetaData'
+import specials from '../data/specials.json'
+
 import {SpecialBG,
         Cow,
         Tbone,
@@ -157,6 +160,7 @@ const Specials = () => {
 
     return (
         <Container>
+            <MetaData title={`Herberts - ${specials.title}`} description={specials.description} />
             <Banner img={SpecialBG} title="SPECIALS" />
             <div className="main">
                 <div className="text">

@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled'
 import ResponsiveGallery from 'react-responsive-gallery';
+import MetaData from '../components/MetaData'
+import gallery from '../data/gallery.json'
+
 import {
 
     Gallery1,
@@ -89,6 +92,7 @@ const Gallery = () => {
     
     return (
         <Container>
+            <MetaData title={`Herberts - ${gallery.title}`} description={gallery.description} />
             <div className="text">
                 <h3>OUR GALLERY</h3>
                 <p>Herbert's Country Meat Market was established in 1936 and has been serving the Hempstead community with the freshest beef, pork, poultry, lamb, goat, oxtails and so much more. We take pride in our cuts of meat. Take a look at what we have to offer. Like what you see? Contact us about our specials! </p>

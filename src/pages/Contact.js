@@ -2,6 +2,9 @@ import React from 'react';
 import styled from '@emotion/styled'
 import Banner  from './../components/Banner'
 import mq from './../scripts/breakpoints';
+import MetaData from '../components/MetaData'
+import contact from '../data/contact.json'
+
 import {ContactBG,
         ContactPhone,
         ContactMail,
@@ -193,6 +196,7 @@ const Contact = () => {
     }
     return (
         <Container>
+            <MetaData title={`Herberts - ${contact.title}`} description={contact.description} />
             <Banner img={ContactBG} title="CONTACT" />
             <div className="main">
                 <div className="text">

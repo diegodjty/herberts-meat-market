@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled'
+import MetaData from '../components/MetaData'
+import meatgrades from '../data/meatgrades.json'
 import {MeatGradesBG,
         MeatInspection, 
         MeatGrading, 
@@ -187,6 +189,7 @@ const Container = styled.div`
 const MeatGrades = () => {
     return (
         <Container>
+            <MetaData title={`Herberts - ${meatgrades.title}`} description={meatgrades.description} />
             <Banner img={MeatGradesBG} title="MEAT GRADES & CUTS" />
             <div className="main">
                 <div className="title">
