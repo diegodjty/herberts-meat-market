@@ -27,12 +27,12 @@ function App() {
       <Header />
       <MobileHeader />
       <Switch>
-          <Route exact path="/" component={Homepage}/>
-          <Route exact path="/specials" component={Specials}/>
-          <Route exact path="/about" component={About}/>
-          <Route exact path="/meatgrades" component={MeatGrades}/>
-          <Route exact path="/gallery" component={Gallery}/>
-          <Route exact path="/contact" component={Contact}/>
+          <Route path="/" component={Homepage}/>
+          <Route path="/specials" component={Specials}/>
+          <Route path="/about" component={About}/>
+          <Route path="/meatgrades" component={MeatGrades}/>
+          <Route path="/gallery" component={Gallery}/>
+          <Route path="/contact" component={Contact}/>
       </Switch>
       <Comments />
       <Footer />
