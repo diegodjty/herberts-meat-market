@@ -15,9 +15,7 @@ import Header from './components/Header';
 
 import ScrollToTop from './components/ScrollToTop';
 import {
-
-
-  BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route
 } from "react-router-dom";
@@ -25,21 +23,21 @@ import {
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <ScrollToTop />
       <Header />
       <MobileHeader />
       <Switch>
-          <Route  path="/" exact component={Homepage}/>
-          <Route  path="/specials" component={Specials}/>
-          <Route  path="/about" component={About}/>
-          <Route  path="/meatgrades" component={MeatGrades}/>
-          <Route  path="/gallery" component={Gallery}/>
-          <Route  path="/contact" component={Contact}/>
+          <Route exact path="/" component={Homepage}/>
+          <Route exact path="/specials" component={Specials}/>
+          <Route exact path="/about" component={About}/>
+          <Route exact path="/meatgrades" component={MeatGrades}/>
+          <Route exact path="/gallery" component={Gallery}/>
+          <Route exact path="/contact" component={Contact}/>
       </Switch>
       <Comments />
       <Footer />
-    </Router>
+    </HashRouter>
     
     
    )
