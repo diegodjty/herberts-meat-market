@@ -13,7 +13,9 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Header from './components/Header';
 
+import ScrollToTop from './components/ScrollToTop';
 import {
+
 
   BrowserRouter as Router,
   Switch,
@@ -24,15 +26,16 @@ import {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <MobileHeader />
       <Switch>
-          <Route path="/" component={Homepage}/>
-          <Route path="/specials" component={Specials}/>
-          <Route path="/about" component={About}/>
-          <Route path="/meatgrades" component={MeatGrades}/>
-          <Route path="/gallery" component={Gallery}/>
-          <Route path="/contact" component={Contact}/>
+          <Route  path="/" exact component={Homepage}/>
+          <Route  path="/specials" component={Specials}/>
+          <Route  path="/about" component={About}/>
+          <Route  path="/meatgrades" component={MeatGrades}/>
+          <Route  path="/gallery" component={Gallery}/>
+          <Route  path="/contact" component={Contact}/>
       </Switch>
       <Comments />
       <Footer />
