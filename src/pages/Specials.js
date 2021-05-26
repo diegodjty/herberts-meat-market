@@ -186,7 +186,7 @@ const Specials = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $49.98
+                            $55.98
                         </div>
                         <div className="list">
                             <p>Includes FREE 1lb.
@@ -240,7 +240,7 @@ const Specials = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $81.98
+                            $89.98
                         </div>
                         <div className="list">
                                 <p>Includes FREE 1 Dozen
@@ -278,7 +278,7 @@ const Specials = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $59.98
+                            $69.98
                         </div>
                         <div className="list">
                                 <p>Includes FREE Jar of "Spice Time"
@@ -311,7 +311,7 @@ const Specials = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $59.98
+                            $69.98
                         </div>
                         <div className="list">
                                 <p>Includes FREE 1 lb. Package of Margarine</p>
@@ -344,7 +344,7 @@ const Specials = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $41.98
+                            $49.98
                         </div>
                         <div className="list">
                                 <p>Includes FREE 1 lb. Package of Margarine</p>
@@ -375,7 +375,7 @@ const Specials = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $69.98
+                            $79.98
                         </div>
                         <div className="list">
                                 <p>Includes FREE Package of Regular Hot Dog or Burger Buns</p>
@@ -408,7 +408,7 @@ const Specials = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $72.98
+                            $79.98
                         </div>
                         <div className="list">
                                 <p>Includes FREE 1 lb. Package of Margarine</p>
@@ -442,7 +442,7 @@ const Specials = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $139.98
+                            $155.98
                         </div>
                         <div className="list">
                                 <p>Includes FREE 1 Dozen Extra Large Eggs</p>
@@ -481,7 +481,7 @@ const Specials = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $139.98
+                            $145.98
                         </div>
                         <div className="list">
                                 <p>IncluIncludes FREE Package of Franks (Chicken, Turkey or Beef)</p>
@@ -519,7 +519,7 @@ const Specials = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $99.98
+                            $110.98
                         </div>
                         <div className="list">
                                 <p>Includes FREE 1 lb. Package of Margarine</p>
@@ -556,7 +556,7 @@ const Specials = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $139.98
+                            $19.98
                         </div>
                         <div className="list">
                                 <p>Includes FREE 1 lb. Package of Margarine</p>
@@ -586,7 +586,7 @@ const Specials = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $189.98
+                            $210.98
                         </div>
                         <div className="list">
                                 <p>Includes FREE 3 lb. All Meat Sausage</p>
@@ -625,7 +625,7 @@ const Specials = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $234.98
+                            $259.98
                         </div>
                         <div className="list">
                                 <p>Includes FREE 3 lb. All Meat Sausage</p>

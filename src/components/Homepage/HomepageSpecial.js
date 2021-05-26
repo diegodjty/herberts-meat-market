@@ -172,7 +172,7 @@ const HomepageSpecial = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $49.98
+                            $55.98
                         </div>
                         <div className="list">
                             <p>Includes FREE 1lb.
@@ -226,7 +226,7 @@ const HomepageSpecial = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $81.98
+                            $89.98
                         </div>
                         <div className="list">
                                 <p>Includes FREE 1 Dozen
@@ -264,7 +264,7 @@ const HomepageSpecial = () => {
                             </span>
                         </div>
                         <div className="price">
-                            $59.98
+                            $69.98
                         </div>
                         <div className="list">
                                 <p>Includes FREE Jar of "Spice Time"
