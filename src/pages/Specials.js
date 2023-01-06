@@ -288,7 +288,7 @@ const Specials = () => {
             <div className="list">
               <p>Includes FREE 1 lb. Package of Margarine</p>
               <ul>
-                <li>2 lbs. Prime Cut Chuck Steak</li>
+                <li>2 lbs. Prime Ground Chuck</li>
                 <li>2 lbs. Grain-fed Pork Chops (Sirloin or Shoulder Cut)</li>
                 <li>1 lb. Country Slab Bacon</li>
                 <li>3 lbs. Grade A Perdue Chicken</li>
