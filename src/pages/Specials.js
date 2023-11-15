@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import styled from '@emotion/styled';
-import mq from './../scripts/breakpoints';
-import Banner from './../components/Banner';
-import MetaData from '../components/MetaData';
-import specials from '../data/specials.json';
+import React, { useState } from "react";
+import styled from "@emotion/styled";
+import mq from "./../scripts/breakpoints";
+import Banner from "./../components/Banner";
+import MetaData from "../components/MetaData";
+import specials from "../data/specials.json";
 
 import {
   SpecialBG,
@@ -22,7 +22,7 @@ import {
   Wholechicken,
   Add,
   Remove,
-} from '../img';
+} from "../img";
 
 const Container = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   ${mq[1]} {
     margin-top: 0;
   }
@@ -90,7 +90,7 @@ const Container = styled.div`
         border: solid 1px #c13a3a;
         color: #c13a3a;
         font-weight: bold;
-        font-family: 'Cabin', sans-serif;
+        font-family: "Cabin", sans-serif;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -103,7 +103,7 @@ const Container = styled.div`
       }
       .price {
         font-weight: bold;
-        font-family: 'Alfa Slab One', sans-serif;
+        font-family: "Alfa Slab One", sans-serif;
         font-size: 1.8rem;
         color: #c13a3a;
       }
@@ -114,7 +114,7 @@ const Container = styled.div`
         }
         ul {
           li {
-            font-family: 'Arial';
+            font-family: "Arial";
             font-size: 0.9rem;
           }
         }
@@ -131,8 +131,8 @@ const Specials = () => {
       e.target.parentElement.parentElement.nextElementSibling
         .nextElementSibling;
 
-    target.style.display = 'block';
-    target.classList.add('animate__animated', 'animate__fadeIn');
+    target.style.display = "block";
+    target.classList.add("animate__animated", "animate__fadeIn");
     setDetail(false);
   };
 
@@ -141,7 +141,7 @@ const Specials = () => {
       e.target.parentElement.parentElement.nextElementSibling
         .nextElementSibling;
 
-    target.style.display = 'none';
+    target.style.display = "none";
 
     setDetail(true);
   };
@@ -180,7 +180,7 @@ const Specials = () => {
               <p>Includes FREE 1lb. Package of Margarine</p>
               <ul>
                 <li>2lbs.Prime Cut Chuck Steak</li>
-                <li>2lbs.Prime Ground Chuck</li>
+                <li>1lbs.Prime Ground Chuck</li>
                 <li>2lbs.Grain-Fed Pork Chops</li>
                 <li>1lb.Country Slab Bacon</li>
                 <li>3 lbs.Grade A Perdue Chicken</li>
